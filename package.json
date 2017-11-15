@@ -1,20 +1,13 @@
 {
   "name": "vue-commercetools",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "author": "Ruben Brieva <rubenbrieva@gmail.com>",
   "private": false,
   "license": "MIT",
-  "keywords": [
-    "vue",
-    "vuejs",
-    "vuejs2",
-    "filters",
-    "vue-filters",
-    "commercetools"
-  ],
+  "keywords": ["vue", "vuejs", "vuejs2", "filters", "vue-filters", "commercetools"],
   "homepage": "https://github.com/rubenbrieva/vue-commercetools#readme",
-  "main": "index.js",
+  "main": "dist/vue-commercetools.js",
   "scripts": {
     "build": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd",
     "dev": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd --watch",
