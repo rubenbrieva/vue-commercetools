@@ -1,0 +1,64 @@
+{
+  "name": "vue-commercetools",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ruben Brieva <rubenbrieva@gmail.com>",
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vuejs2",
+    "filters",
+    "vue-filters",
+    "commercetools"
+  ],
+  "homepage": "https://github.com/rubenbrieva/vue-commercetools#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd",
+    "dev": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd --watch",
+    "unit": "karma start test/karma.conf.js --single-run",
+    "lint": "eslint --ext .js src",
+    "test": "npm-run-all -s lint unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenbrieva/vue-commercetools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rubenbrieva/vue-commercetools/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jasmine": "^2.9.1",
+    "jasmine": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma": "^1.7.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "^2.0.6",
+    "npm-run-all": "^4.1.2",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "typographic-currency-db": "^1.0.0"
+  }
+}
