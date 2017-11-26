@@ -1,7 +1,8 @@
 {
   "name": "vue-commercetools",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description":
+    "Collection of filters and utilities for the fast development of ecommerce sites with Commercetools and Vue.js",
   "author": "Ruben Brieva <rubenbrieva@gmail.com>",
   "private": false,
   "license": "MIT",
@@ -9,8 +10,9 @@
   "homepage": "https://github.com/rubenbrieva/vue-commercetools#readme",
   "main": "dist/vue-commercetools.js",
   "scripts": {
-    "build": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd",
-    "dev": "webpack src/index.js dist/vue-commercetools.js --output-library-target umd --watch",
+    "build": "npm-run-all -s lint unit build-js",
+    "build-js": "webpack",
+    "dev": "webpack --watch",
     "unit": "karma start test/karma.conf.js --single-run",
     "lint": "eslint --ext .js src",
     "test": "npm-run-all -s lint unit"
